@@ -1,5 +1,5 @@
 require 'pg'
-require 'active_record' #why was this necessary here, but not in the sample app?
+require 'active_record'
 
 ActiveRecord::Base.establish_connection(
 :adapter => "postgresql",

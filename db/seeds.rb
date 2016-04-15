@@ -1,5 +1,5 @@
 require 'bundler/setup'
-require 'pry'   #why are these here?
+require 'pry'  
 
 require_relative "../db/connection.rb" # tried appending .rb, prpending /, ., and .. Nothing worked
 require_relative "../models/apartment"

@@ -67,14 +67,14 @@ puts "*"*30
 
 # Iterate over each apartment, for each apartment, display it's address and rent price
 
-# Apartment.all.each {|a| puts a.address + " " + a.monthly_rent.to_s}
+Apartment.all.each {|a| puts a.address + " " + a.monthly_rent.to_s}
 
 # Iterate over each apartment, for each apartment, display it's address and all of it's tenants
 
-# Apartment.all.each do |a|
-#    puts "Apartment: #{a.address}, Tenants:"
-#     a.tenants.each {|t| puts t.name}
-# end
+Apartment.all.each do |a|
+   puts "Apartment: #{a.address}, Tenants:"
+    a.tenants.each {|t| puts t.name}
+end
 
 
 ################################################
@@ -128,7 +128,7 @@ KW = Tenant.find_by(name: "Kristin Wisoky")
 
 verna = Apartment.find_by(address: "62897 Verna Walk")
 
-puts verna[:num_beds] 
+puts verna[:num_beds]
 verna[:num_beds] = verna[:num_beds] + 1
 puts verna[:num_beds]
 
